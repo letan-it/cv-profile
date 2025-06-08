@@ -8,13 +8,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap" rel="stylesheet" />
   </head>
   <body>
+    <div class="language-switcher">
+      <button onclick="switchLanguage('vi')"><img src="https://flagcdn.com/w20/vn.png" alt="🇻🇳" /> Tiếng Việt</button>
+      <button onclick="switchLanguage('en')"><img src="https://flagcdn.com/w20/us.png" alt="🇺🇸" /> English</button>
+      <button onclick="switchLanguage('zh')"><img src="https://flagcdn.com/w20/cn.png" alt="🇨🇳" /> 中文</button>
+      <button onclick="switchLanguage('ja')"><img src="https://flagcdn.com/w20/jp.png" alt="🇯🇵" /> 日本語</button>
+    </div>
+
     <header>
       <div class="container">
         <img src="./img/img_avt.png" alt="Lê Quốc Tấn" class="avatar" />
         <div class="info">
           <h1>Lê Quốc Tấn</h1>
-          <p>Fullstack Developer (.NET, Angular, SQL)</p>
-          <span>📍 Hồ Chí Minh, Việt Nam</span>
+          <p data-i18n="job_title">Fullstack Developer (.NET, Angular, SQL)</p>
+          <span data-i18n="location">📍 Hồ Chí Minh, Việt Nam</span>
           <div class="contact">
             <a href="mailto:quoctanvhp@gmail.com">📧 quoctanvhp@gmail.com</a>
             <a href="tel:0386677607">📞 038 6677 607</a>
@@ -25,72 +32,78 @@
 
     <section class="about">
       <div class="container">
-        <h2>🎯 Mục tiêu nghề nghiệp</h2>
-        <p>
-          Mong muốn phát triển sự nghiệp trong vai trò Fullstack Developer với định hướng chuyên sâu về .NET, Angular và các công nghệ DevOps. Mục
-          tiêu trung hạn là trở thành Tech Lead, góp phần xây dựng các giải pháp tối ưu và phát triển đội ngũ kỹ thuật hiệu quả.
+        <h2 data-i18n="career_goal_title">🎯 Mục tiêu nghề nghiệp</h2>
+        <p data-i18n="career_goal1">
+          Mong muốn phát triển sự nghiệp trong vai trò Fullstack Developer với định hướng chuyên sâu về .NET, Angular và các công nghệ DevOps.
         </p>
-        <p>
-          Aspire to develop a career as a Fullstack Developer with a strong focus on .NET, Angular, and DevOps technologies. The mid-term goal is to
-          become a Tech Lead, contributing to the development of optimized solutions and building an effective technical team.
+        <p data-i18n="career_goal2">
+          Mục tiêu trung hạn là trở thành Tech Lead, góp phần xây dựng các giải pháp tối ưu và phát triển đội ngũ kỹ thuật hiệu quả.
         </p>
       </div>
     </section>
 
     <section class="experience">
       <div class="container">
-        <h2>💼 Kinh nghiệm làm việc</h2>
+        <h2 data-i18n="Work_experience_title">💼 Kinh nghiệm làm việc</h2>
 
         <div class="job">
-          <h3>ACACY Co., Ltd — Senior IT R&D (07/2023 - Present)</h3>
+          <h3 data-i18n="Work_experience_title0">ACACY Co., Ltd — Senior IT R&D (07/2023 - Present)</h3>
           <ul>
-            <li>Quản lý và điều phối các dự án phát triển hệ thống nội bộ công ty.</li>
-            <li>Vai trò Team Lead: dẫn dắt nhóm gồm 3 lập trình viên web và 2 lập trình viên mobile.</li>
-            <li>Phối hợp với Tech Lead và Manager trong việc đề xuất và triển khai giải pháp kỹ thuật phù hợp với từng dự án.</li>
-            <li>Tổ chức các cuộc họp định kỳ để nắm bắt solution, hỗ trợ đội nhóm giải quyết vấn đề nghiệp vụ, xử lý lỗi và tối ưu hệ thống.</li>
-            <li>Triển khai và vận hành hệ thống trên các môi trường: IIS, Docker, Jenkins, Windows Server.</li>
-            <li>Công nghệ sử dụng: .NET Framework, MSSerivce, TaskJob auto, NET Core, SQL Server, Angular, SVN, Power BI.</li>
+            <li data-i18n="Work_experience_title1">Quản lý và điều phối các dự án phát triển hệ thống nội bộ công ty.</li>
+            <li data-i18n="Work_experience_title2">Vai trò Team Lead: dẫn dắt nhóm gồm 3 lập trình viên web và 2 lập trình viên mobile.</li>
+            <li data-i18n="Work_experience_title3">
+              Phối hợp với Tech Lead và Manager trong việc đề xuất và triển khai giải pháp kỹ thuật phù hợp với từng dự án.
+            </li>
+            <li data-i18n="Work_experience_title4">
+              Tổ chức các cuộc họp định kỳ để nắm bắt solution, hỗ trợ đội nhóm giải quyết vấn đề nghiệp vụ, xử lý lỗi và tối ưu hệ thống.
+            </li>
+            <li data-i18n="Work_experience_title5">Triển khai và vận hành hệ thống trên các môi trường: IIS, Docker, Jenkins, Windows Server.</li>
+            <li data-i18n="Work_experience_title6">
+              Công nghệ sử dụng: .NET Framework, MSSerivce, TaskJob auto, NET Core, SQL Server, Angular, SVN, Power BI.
+            </li>
           </ul>
-          <strong>Các dự án tiêu biểu:</strong>
+          <strong data-i18n="Work_experience_title7">Các dự án tiêu biểu:</strong>
           <ul>
-            <li>Merchandise Unilever</li>
-            <li>Retail MT Store</li>
-            <li>Samsung Field Force</li>
-            <li>Redemption & Activation</li>
-            <li>Microservices xử lý dữ liệu tích hợp đối tác</li>
-          </ul>
-        </div>
-
-        <div class="job">
-          <h3>Dicentral VN - TrueCommerce — Senior Developer (07/2022 - 06/2023)</h3>
-          <ul>
-            <li>Phát triển và bảo trì hệ thống phần mềm.</li>
-            <li>Di chuyển hệ thống từ .NET WebForms sang .NET Core + Angular.</li>
-            <li>Công nghệ: .NET Core, SQL, Angular, MS Services, Azure DevOps, Git.</li>
+            <li data-i18n="Work_experience_title8">Merchandise Unilever</li>
+            <li data-i18n="Work_experience_title9">Retail MT Store</li>
+            <li data-i18n="Work_experience_title10">Samsung Field Force</li>
+            <li data-i18n="Work_experience_title11">Redemption & Activation</li>
+            <li data-i18n="Work_experience_title12">Microservices xử lý dữ liệu tích hợp đối tác</li>
           </ul>
         </div>
 
         <div class="job">
-          <h3>ACACY Co., Ltd — Team Leader Application (12/2021 - 06/2022)</h3>
+          <h3 data-i18n="Work_experience_title_1_0">Dicentral VN - TrueCommerce — Senior Developer (07/2022 - 06/2023)</h3>
           <ul>
-            <li>Quản lý nhóm lập trình viên, phát triển hệ thống nội bộ.</li>
-            <li>Quản lý yêu cầu nghiệp vụ, phân công công việc.</li>
-            <li>Công nghệ: .NET Framework, .NET Core, SQL, Angular.</li>
+            <li data-i18n="Work_experience_title_1_1">Phát triển và bảo trì hệ thống phần mềm.</li>
+            <li data-i18n="Work_experience_title_1_2">Di chuyển hệ thống từ .NET WebForms sang .NET Core + Angular.</li>
+            <li data-i18n="Work_experience_title_1_3">Công nghệ: .NET Core, SQL, Angular, MS Services, Azure DevOps, Git.</li>
           </ul>
         </div>
 
         <div class="job">
-          <h3>ACACY Co., Ltd — Developer ASP.NET (10/2018 - 12/2021)</h3>
+          <h3 data-i18n="Work_experience_title_2_0">ACACY Co., Ltd — Team Leader Application (12/2021 - 06/2022)</h3>
           <ul>
-            <li>Phát triển các hệ thống nội bộ như Samsung Fieldforce, Unilever Merchandising, Techcombank Audit...</li>
-            <li>Công nghệ: .NET Framework, SQL, WebForms, IIS Services.</li>
+            <li data-i18n="Work_experience_title_2_1">Quản lý nhóm lập trình viên, phát triển hệ thống nội bộ.</li>
+            <li data-i18n="Work_experience_title_2_2">Quản lý yêu cầu nghiệp vụ, phân công công việc.</li>
+            <li data-i18n="Work_experience_title_2_3">Công nghệ: .NET Framework, .NET Core, SQL, Angular.</li>
           </ul>
         </div>
 
         <div class="job">
-          <h3>AthenaGroup — Social Digital Marketing (06/2018 - 09/2018)</h3>
+          <h3 data-i18n="Work_experience_title_2_4">ACACY Co., Ltd — Developer ASP.NET (10/2018 - 12/2021)</h3>
           <ul>
-            <li>Tham gia chiến dịch marketing số và hỗ trợ giải pháp cho khách hàng.</li>
+            <li data-i18n="Work_experience_title_2_5">
+              Phát triển các hệ thống nội bộ như Samsung Fieldforce, Unilever Merchandising, Techcombank Audit...
+            </li>
+            <li data-i18n="Work_experience_title_2_6">Công nghệ: .NET Framework, SQL, WebForms, IIS Services.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <h3 data-i18n="Work_experience_title_2_7">AthenaGroup — Social Digital Marketing (06/2018 - 09/2018)</h3>
+          <ul>
+            <li data-i18n="Work_experience_title_2_8">Tham gia chiến dịch marketing số và hỗ trợ giải pháp cho khách hàng.</li>
           </ul>
         </div>
       </div>
@@ -98,36 +111,50 @@
 
     <section class="education">
       <div class="container">
-        <h2>🎓 Trình độ học vấn</h2>
-        <p>Đại học Trần Đại Nghĩa (VIMHEMPIC) — 2014 - 2018</p>
-        <p>Chuyên ngành: Ứng dụng CNTT | GPA: 2.54</p>
+        <h2 data-i18n="edu">🎓 Trình độ học vấn</h2>
+        <p data-i18n="edu1">Đại học Trần Đại Nghĩa - SQKT Quân sự — 2014 - 2018</p>
+        <p data-i18n="edu2">Chuyên ngành: Ứng dụng CNTT | GPA: 2.54</p>
+        <div class="image-gallery">
+          <div class="image-column">
+            <img src="./img/bang_cap.png" alt="Bằng cấp 1" />
+            <img src="./img/Anh_Van_B.jpg" alt="Bằng Anh Văn" />
+          </div>
+          <div class="image-column">
+            <img src="./img/bang_cap_1.png" alt="Bằng cấp 2" />
+          </div>
+        </div>
       </div>
     </section>
 
+ 
+
     <section class="skills">
       <div class="container">
-        <h2>🛠️ Kỹ năng</h2>
+        <h2 data-i18n="Skill">🛠️ Kỹ năng</h2>
         <ul>
-          <li>Lập trình: C#, .NET Framework/Core, SQL, Angular</li>
-          <li>Triển khai: Docker, Jenkins, IIS, Windows Server</li>
-          <li>Quản lý mã nguồn: Git, SVN, TFS</li>
-          <li>Kỹ năng mềm: Làm việc nhóm, Giải quyết vấn đề, Quản lý thời gian</li>
+          <li data-i18n="Skill1">Lập trình: C#, .NET Framework/Core, SQL, Angular</li>
+          <li data-i18n="Skill2">Triển khai: Docker, Jenkins, IIS, Windows Server</li>
+          <li data-i18n="Skill3">Quản lý mã nguồn: Git, SVN, TFS</li>
+          <li data-i18n="Skill4">Kỹ năng mềm: Làm việc nhóm, Giải quyết vấn đề, Quản lý thời gian</li>
         </ul>
       </div>
     </section>
 
     <section class="portfolio">
       <div class="container">
-        <h2>📁 Dự án tiêu biểu</h2>
+        <h2 data-i18n="Featured_projects">📁 Dự án tiêu biểu</h2>
         <div class="projects">
           <div class="card" onclick="openModal('modal1')">
             <img src="./img/img_umer.png" alt="Merchandise Unilever" />
             <div class="card-body">
               <h4>Merchandise Unilever</h4>
-              <p>Quản lý đội ngũ sales và hoạt động thị trường...</p>
+              <p data-i18n="Featured_projects_1">Quản lý đội ngũ sales và hoạt động thị trường...</p>
               <p>
-                <strong>Công nghệ sử dụng:</strong> ASP.NET Web Forms, .NET Framework 2.2, SQL Server, AJAX, xử lý API qua <code>.ashx</code>,
-                Chart.js, Microservice, Job Background gửi báo cáo mail hàng ngày.
+                <strong data-i18n="Featured_projects_0">Công nghệ sử dụng:</strong>
+                <labal data-i18n="Featured_projects_2"
+                  >ASP.NET Web Forms, .NET Framework 2.2, SQL Server, AJAX, xử lý API qua .ashx, Chart.js, Microservice, Job Background gửi báo cáo
+                  mail hàng ngày.
+                </labal>
               </p>
             </div>
           </div>
@@ -135,18 +162,24 @@
             <img src="https://github.com/letan-it/cv-profile/blob/main/img/im_rental.png?raw=true" alt="Retail MT Store" />
             <div class="card-body">
               <h4>Retail MT Store</h4>
-              <p>Ứng dụng chấm công cho PG tại điểm bán...</p>
-              <p><strong>Công nghệ sử dụng:</strong> netcore 6, SQL Server, Angular15, Chart.js, Microservice</p>
+              <p data-i18n="Featured_projects_3">Ứng dụng chấm công cho PG tại điểm bán...</p>
+              <p>
+                <strong data-i18n="Featured_projects_0">Công nghệ sử dụng:</strong>
+                <label data-i18n="Featured_projects_4"> netcore 6, SQL Server, Angular15, Chart.js, Microservice</label>
+              </p>
             </div>
           </div>
           <div class="card" onclick="openModal('modal3')">
             <img src="img/img_sss.png" alt="Samsung Field Force" />
             <div class="card-body">
               <h4>Samsung Field Force</h4>
-              <p>Quản lý nhân sự và chấm công lực lượng thị trường...</p>
+              <p data-i18n="Featured_projects_5">Quản lý nhân sự và chấm công lực lượng thị trường...</p>
               <p>
-                <strong>Công nghệ sử dụng:</strong> ASP.NET Web Forms, .NET Framework 2.2, SQL Server, AJAX, xử lý API qua <code>.ashx</code>,
-                Chart.js, Microservice, Job Background gửi báo cáo mail hàng ngày.
+                <strong data-i18n="Featured_projects_0">Công nghệ sử dụng:</strong>
+                <label data-i18n="Featured_projects_6"
+                  >ASP.NET Web Forms, .NET Framework 2.2, SQL Server, AJAX, xử lý API qua.ashx, Chart.js, Microservice, Job Background gửi báo cáo
+                  mail hàng ngày.</label
+                >
               </p>
             </div>
           </div>
@@ -164,7 +197,7 @@
         <span class="close" onclick="closeModal('modal1')">&times;</span>
         <h3>Merchandise Unilever</h3>
         <img width="100%" src="./img/img_umer.png" alt="Merchandise Unilever" />
-        <p>
+        <p data-i18n="info1">
           Hệ thống quản lý đội ngũ sales, audit và merchandiser thực hiện việc chấm điểm trưng bày, khảo sát thị trường, và triển khai hoạt động bán
           hàng.
         </p>
@@ -175,7 +208,7 @@
       <div class="modal-content">
         <span class="close" onclick="closeModal('modal2')">&times;</span>
         <h3>Retail MT Store</h3>
-        <p>
+        <p data-i18n="info2">
           Ứng dụng chấm công cho PG tại siêu thị/kho. Nhân viên thực hiện việc chấm công tại điểm bán, kiểm kê, trưng bày hàng hóa và tiếp thị sản
           phẩm. (Khách hàng: Pepsi, Mondelez, Abbott...)
         </p>
@@ -186,39 +219,11 @@
       <div class="modal-content">
         <span class="close" onclick="closeModal('modal3')">&times;</span>
         <h3>Samsung Field Force</h3>
-        <p>Quản lý nhân sự và chấm công cho lực lượng sale thị trường của Samsung.</p>
+        <p data-i18n="info3">Quản lý nhân sự và chấm công cho lực lượng sale thị trường của Samsung.</p>
         <img width="100%" src="./img/img_ss.png" alt="Merchandise Unilever" />
       </div>
     </div>
 
-    <section class="education">
-      <div class="container">
-        <h2>🎓 Trình độ học vấn</h2>
-        <p>Đại học Trần Đại Nghĩa - SQKT Quân sự — 2014 - 2018</p>
-        <p>Chuyên ngành: Ứng dụng CNTT | GPA: 2.54</p>
-       <div class="image-gallery">
-  <div class="image-column">
-    <img src="./img/bang_cap.png" alt="Bằng cấp 1" />
-    <img src="./img/Anh_Van_B.jpg" alt="Bằng Anh Văn" />
-  </div>
-  <div class="image-column">
-    <img src="./img/bang_cap_1.png" alt="Bằng cấp 2" />
-  </div>
-</div>
-      </div>
-    </section>
-
-    <section class="skills">
-      <div class="container">
-        <h2>🛠️ Kỹ năng</h2>
-        <ul>
-          <li>Lập trình: C#, .NET Framework/Core, SQL, Angular</li>
-          <li>Triển khai: Docker, Jenkins, IIS, Windows Server</li>
-          <li>Quản lý mã nguồn: Git, SVN, TFS</li>
-          <li>Kỹ năng mềm: Làm việc nhóm, Giải quyết vấn đề, Quản lý thời gian</li>
-        </ul>
-      </div>
-    </section>
 
     <script>
       function openModal(id) {
@@ -235,6 +240,263 @@
           }
         });
       };
+    </script>
+    <script>
+      const translations = {
+        vi: {
+          title: "Lê Quốc Tấn - Fullstack Developer",
+          job_title: "Fullstack Developer (.NET, Angular, SQL)",
+          location: "📍 Hồ Chí Minh, Việt Nam",
+          career_goal_title: "🎯 Mục tiêu nghề nghiệp",
+          career_goal1:
+            "Mong muốn phát triển sự nghiệp trong vai trò Fullstack Developer với định hướng chuyên sâu về .NET, Angular và các công nghệ DevOps.",
+          career_goal2: "Mục tiêu trung hạn là trở thành Tech Lead, góp phần xây dựng các giải pháp tối ưu và phát triển đội ngũ kỹ thuật hiệu quả.",
+          Work_experience_title: "💼 Kinh nghiệm làm việc",
+          Work_experience_title0: "ACACY Co., Ltd — Senior IT R&D (07/2023 - Hiện tại)",
+          Work_experience_title1: "Quản lý và điều phối các dự án phát triển hệ thống nội bộ công ty.",
+          Work_experience_title2: "Vai trò Team Lead: dẫn dắt nhóm gồm 3 lập trình viên web và 2 lập trình viên mobile.",
+          Work_experience_title3: "Phối hợp với Tech Lead và Manager trong việc đề xuất và triển khai giải pháp kỹ thuật phù hợp với từng dự án.",
+          Work_experience_title4:
+            "Tổ chức các cuộc họp định kỳ để nắm bắt solution, hỗ trợ đội nhóm giải quyết vấn đề nghiệp vụ, xử lý lỗi và tối ưu hệ thống.",
+          Work_experience_title5: "Triển khai và vận hành hệ thống trên các môi trường: IIS, Docker, Jenkins, Windows Server.",
+          Work_experience_title6: "Công nghệ sử dụng: .NET Framework, MSSerivce, TaskJob auto, NET Core, SQL Server, Angular, SVN, Power BI.",
+          Work_experience_title7: "Các dự án tiêu biểu:",
+          Work_experience_title8: "Merchandise Unilever",
+          Work_experience_title9: "Retail MT Store",
+          Work_experience_title10: "Samsung Field Force",
+          Work_experience_title11: "Redemption & Activation",
+          Work_experience_title12: "Microservices xử lý dữ liệu tích hợp đối tác",
+          Work_experience_title_1_0: "Dicentral VN - TrueCommerce — Senior Developer (07/2022 - 06/2023)",
+          Work_experience_title_1_1: "Phát triển và bảo trì hệ thống phần mềm.",
+          Work_experience_title_1_2: "Di chuyển hệ thống từ .NET WebForms sang .NET Core + Angular.",
+          Work_experience_title_1_3: "Công nghệ: .NET Core, SQL, Angular, MS Services, Azure DevOps, Git.",
+          Work_experience_title_2_0: "ACACY Co., Ltd — Team Leader Application (12/2021 - 06/2022)",
+          Work_experience_title_2_1: "Quản lý nhóm lập trình viên, phát triển hệ thống nội bộ.",
+          Work_experience_title_2_2: "Quản lý yêu cầu nghiệp vụ, phân công công việc.",
+          Work_experience_title_2_3: "Công nghệ: .NET Framework, .NET Core, SQL, Angular.",
+          Work_experience_title_2_4: "ACACY Co., Ltd — Developer ASP.NET (10/2018 - 12/2021)",
+          Work_experience_title_2_5: "Phát triển các hệ thống nội bộ như Samsung Fieldforce, Unilever Merchandising, Techcombank Audit...",
+          Work_experience_title_2_6: "Công nghệ: .NET Framework, SQL, WebForms, IIS Services.",
+          Work_experience_title_2_7: "AthenaGroup — Social Digital Marketing (06/2018 - 09/2018)",
+          Work_experience_title_2_8: "Tham gia chiến dịch marketing số và hỗ trợ giải pháp cho khách hàng.",
+          Education_level: "🎓 Trình độ học vấn",
+          Education_level_1: "Đại học Trần Đại Nghĩa (VIMHEMPIC) — 2014 - 2018",
+          Education_level_2: "Chuyên ngành: Ứng dụng CNTT | GPA: 2.54",
+          Skill: "🛠️ Kỹ năng",
+          Skill1: "Lập trình: C#, .NET Framework/Core, SQL, Angular",
+          Skill2: "Triển khai: Docker, Jenkins, IIS, Windows Server",
+          Skill3: "Quản lý mã nguồn: Git, SVN, TFS",
+          Skill4: "Kỹ năng mềm: Làm việc nhóm, Giải quyết vấn đề, Quản lý thời gian",
+          Featured_projects: "📁 Dự án tiêu biểu",
+          Featured_projects_0: "Công nghệ sử dụng:",
+          Featured_projects_1: "Quản lý đội ngũ sales và hoạt động thị trường...",
+          Featured_projects_2:
+            "ASP.NET Web Forms, .NET Framework 2.2, SQL Server, AJAX, xử lý API qua .ashx, Chart.js, Microservice, Job Background gửi báo cáo mail hàng ngày.",
+          Featured_projects_3: "Ứng dụng chấm công cho PG tại điểm bán...",
+          Featured_projects_4: "netcore 6, SQL Server, Angular15, Chart.js, Microservice",
+          Featured_projects_5: "Quản lý nhân sự và chấm công lực lượng thị trường...",
+          Featured_projects_6:
+            "ASP.NET Web Forms, .NET Framework 2.2, SQL Server, AJAX, xử lý API qua.ashx, Chart.js, Microservice, Job Background gửi báo cáo mail hàng ngày.",
+             info1: "Hệ thống quản lý đội ngũ sales, audit và merchandiser thực hiện việc chấm điểm trưng bày, khảo sát thị trường, và triển khai hoạt động bán hàng.",
+    info2: "Ứng dụng chấm công cho PG tại siêu thị/kho. Nhân viên thực hiện việc chấm công tại điểm bán, kiểm kê, trưng bày hàng hóa và tiếp thị sản phẩm. (Khách hàng: Pepsi, Mondelez, Abbott...)",
+    info3: "Quản lý nhân sự và chấm công cho lực lượng sale thị trường của Samsung.",
+     edu: "🎓 Trình độ học vấn",
+    edu1: "Đại học Trần Đại Nghĩa - SQKT Quân sự — 2014 - 2018",
+    edu2: "Chuyên ngành: Ứng dụng CNTT | GPA: 2.54",
+ 
+        },
+        en: {
+          title: "Le Quoc Tan - Fullstack Developer",
+          job_title: "Fullstack Developer (.NET, Angular, SQL)",
+          location: "📍 Ho Chi Minh City, Vietnam",
+          career_goal_title: "🎯 Career Goal",
+          career_goal1: "Aspire to develop a career as a Fullstack Developer focusing on .NET, Angular, and DevOps technologies.",
+          career_goal2: "Mid-term goal is to become a Tech Lead and contribute to optimized solutions and effective team building.",
+          Work_experience_title: "💼 Work Experience",
+          Work_experience_title0: "ACACY Co., Ltd — Senior IT R&D (07/2023 - Present)",
+          Work_experience_title1: "Manage and coordinate internal company system development projects.",
+          Work_experience_title2: "Team Lead role: lead a team of 3 web developers and 2 mobile developers.",
+          Work_experience_title3: "Collaborate with Tech Lead and Manager to propose and implement technical solutions suitable for each project.",
+          Work_experience_title4:
+            "Organize regular meetings to grasp solutions, support the team in solving business issues, bug fixing, and system optimization.",
+          Work_experience_title5: "Deploy and operate systems on environments: IIS, Docker, Jenkins, Windows Server.",
+          Work_experience_title6: "Technologies used: .NET Framework, MSSerivce, TaskJob auto, NET Core, SQL Server, Angular, SVN, Power BI.",
+          Work_experience_title7: "Key projects:",
+          Work_experience_title8: "Merchandise Unilever",
+          Work_experience_title9: "Retail MT Store",
+          Work_experience_title10: "Samsung Field Force",
+          Work_experience_title11: "Redemption & Activation",
+          Work_experience_title12: "Microservices for partner data integration",
+          Work_experience_title_1_0: "Dicentral VN - TrueCommerce — Senior Developer (07/2022 - 06/2023)",
+          Work_experience_title_1_1: "Developed and maintained software systems.",
+          Work_experience_title_1_2: "Migrated system from .NET WebForms to .NET Core + Angular.",
+          Work_experience_title_1_3: "Technologies: .NET Core, SQL, Angular, MS Services, Azure DevOps, Git.",
+          Work_experience_title_2_0: "ACACY Co., Ltd — Team Leader Application (12/2021 - 06/2022)",
+          Work_experience_title_2_1: "Managed a team of developers, developed internal systems.",
+          Work_experience_title_2_2: "Managed business requirements and assigned tasks.",
+          Work_experience_title_2_3: "Technologies: .NET Framework, .NET Core, SQL, Angular.",
+          Work_experience_title_2_4: "ACACY Co., Ltd — ASP.NET Developer (10/2018 - 12/2021)",
+          Work_experience_title_2_5: "Developed internal systems such as Samsung Fieldforce, Unilever Merchandising, Techcombank Audit...",
+          Work_experience_title_2_6: "Technologies: .NET Framework, SQL, WebForms, IIS Services.",
+          Work_experience_title_2_7: "AthenaGroup — Social Digital Marketing (06/2018 - 09/2018)",
+          Work_experience_title_2_8: "Participated in digital marketing campaigns and supported solutions for clients.",
+          Education_level: "🎓 Education",
+          Education_level_1: "Tran Dai Nghia University (VIMHEMPIC) — 2014 - 2018",
+          Education_level_2: "Major: IT Applications | GPA: 2.54",
+          Skill: "🛠️ Skills",
+          Skill1: "Programming: C#, .NET Framework/Core, SQL, Angular",
+          Skill2: "Deployment: Docker, Jenkins, IIS, Windows Server",
+          Skill3: "Source Control: Git, SVN, TFS",
+          Skill4: "Soft Skills: Teamwork, Problem Solving, Time Management",
+          Featured_projects: "📁 Featured Projects",
+          Featured_projects_0: "Technologies used:",
+          Featured_projects_1: "Managing the sales team and market activities...",
+          Featured_projects_2:
+            "ASP.NET Web Forms, .NET Framework 2.2, SQL Server, AJAX, API processing via .ashx, Chart.js, Microservice, background job to send daily report emails.",
+          Featured_projects_3: "Attendance tracking application for PGs at retail points...",
+          Featured_projects_4: "netcore 6, SQL Server, Angular15, Chart.js, Microservice",
+          Featured_projects_5: "Managing human resources and attendance of field force...",
+          Featured_projects_6:
+            "ASP.NET Web Forms, .NET Framework 2.2, SQL Server, AJAX, API processing via .ashx, Chart.js, Microservice, background job to send daily report emails.",
+              info1: "A system for managing sales teams, auditors, and merchandisers to evaluate displays, conduct market surveys, and carry out sales activities.",
+    info2: "An attendance app for PGs at supermarkets/warehouses. Staff check in at sales points, perform inventory, arrange displays, and promote products. (Clients: Pepsi, Mondelez, Abbott...)",
+    info3: "Manage personnel and attendance for Samsung's field sales force.",
+      edu: "🎓 Education",
+    edu1: "Tran Dai Nghia University - Military Technical Officers School — 2014 - 2018",
+    edu2: "Major: IT Application | GPA: 2.54",
+
+        },
+        zh: {
+          title: "黎國進 - 全端開發工程師",
+          job_title: "全端開發工程師 (.NET, Angular, SQL)",
+          location: "📍 越南胡志明市",
+          career_goal_title: "🎯 職業目標",
+          career_goal1: "希望在.NET、Angular 和 DevOps 技術領域成為全端開發人員。",
+          career_goal2: "中期目標是成為技術主管，參與構建優化解決方案和高效的技術團隊。",
+          Work_experience_title: "💼 工作经验",
+          Work_experience_title0: "ACACY有限公司 — 高级IT研发（2023年7月 - 至今）",
+          Work_experience_title1: "管理和协调公司内部系统开发项目。",
+          Work_experience_title2: "团队负责人角色：领导由3名网页开发人员和2名移动开发人员组成的团队。",
+          Work_experience_title3: "与技术负责人和经理合作，提出并实施适合每个项目的技术解决方案。",
+          Work_experience_title4: "组织定期会议，掌握解决方案，支持团队解决业务问题、修复错误并优化系统。",
+          Work_experience_title5: "在以下环境部署和运行系统：IIS、Docker、Jenkins、Windows服务器。",
+          Work_experience_title6: "使用技术：.NET Framework、MSSerivce、TaskJob自动、NET Core、SQL Server、Angular、SVN、Power BI。",
+          Work_experience_title7: "代表项目：",
+          Work_experience_title8: "联合利华商品管理",
+          Work_experience_title9: "零售MT门店",
+          Work_experience_title10: "三星现场团队",
+          Work_experience_title11: "兑换与激活",
+          Work_experience_title12: "用于合作伙伴数据集成的微服务",
+          Work_experience_title_1_0: "Dicentral VN - TrueCommerce — 高级开发人员（2022年7月 - 2023年6月）",
+          Work_experience_title_1_1: "开发和维护软件系统。",
+          Work_experience_title_1_2: "将系统从.NET WebForms迁移到.NET Core + Angular。",
+          Work_experience_title_1_3: "技术：.NET Core、SQL、Angular、MS Services、Azure DevOps、Git。",
+          Work_experience_title_2_0: "ACACY有限公司 — 应用团队负责人（2021年12月 - 2022年6月）",
+          Work_experience_title_2_1: "管理开发团队，开发内部系统。",
+          Work_experience_title_2_2: "管理业务需求并分配任务。",
+          Work_experience_title_2_3: "技术：.NET Framework、.NET Core、SQL、Angular。",
+          Work_experience_title_2_4: "ACACY有限公司 — ASP.NET开发人员（2018年10月 - 2021年12月）",
+          Work_experience_title_2_5: "开发内部系统，如三星Fieldforce、联合利华销售推广、Techcombank审计等。",
+          Work_experience_title_2_6: "技术：.NET Framework、SQL、WebForms、IIS服务。",
+          Work_experience_title_2_7: "AthenaGroup — 社交数字营销（2018年6月 - 2018年9月）",
+          Work_experience_title_2_8: "参与数字营销活动并支持客户解决方案。",
+          Education_level: "🎓 教育背景",
+          Education_level_1: "陈大义大学（VIMHEMPIC）— 2014 - 2018",
+          Education_level_2: "专业：信息技术应用 | GPA：2.54",
+          Skill: "🛠️ 技能",
+          Skill1: "编程：C#，.NET Framework/Core，SQL，Angular",
+          Skill2: "部署：Docker，Jenkins，IIS，Windows服务器",
+          Skill3: "版本控制：Git，SVN，TFS",
+          Skill4: "软技能：团队合作，解决问题，时间管理",
+          Featured_projects: "📁 注目のプロジェクト",
+          Featured_projects_0: "使用技術：",
+          Featured_projects_1: "営業チームと市場活動の管理...",
+          Featured_projects_2:
+            "ASP.NET Web Forms、.NET Framework 2.2、SQL Server、AJAX、.ashxによるAPI処理、Chart.js、マイクロサービス、日次レポートメールを送信するバックグラウンドジョブ。",
+          Featured_projects_3: "店舗でのPGの勤怠管理アプリ...",
+          Featured_projects_4: "netcore 6、SQL Server、Angular15、Chart.js、マイクロサービス",
+          Featured_projects_5: "フィールドフォースの人事および勤怠管理...",
+          Featured_projects_6:
+            "ASP.NET Web Forms、.NET Framework 2.2、SQL Server、AJAX、.ashxによるAPI処理、Chart.js、マイクロサービス、日次レポートメールを送信するバックグラウンドジョブ。",
+              info1: "販売チーム、監査担当者、マーチャンダイザーの管理システムで、陳列評価、市場調査、販売活動を実施します。",
+    info2: "スーパーマーケットや倉庫でのPG向け勤怠アプリ。スタッフは売り場での出勤、在庫確認、商品陳列、商品のプロモーションを行います。（顧客：Pepsi、Mondelez、Abbott...）",
+    info3: "Samsungのフィールドセールスチームの人事と勤怠を管理。",
+      edu: "🎓 学歴",
+    edu1: "チャンダイギア大学 - 軍事技術士官学校 — 2014年～2018年",
+    edu2: "専攻：IT応用 | GPA：2.54",
+
+        },
+        ja: {
+          title: "レ・クォック・タン - フルスタック開発者",
+          job_title: "フルスタック開発者 (.NET, Angular, SQL)",
+          location: "📍 ベトナム・ホーチミン市",
+          career_goal_title: "🎯 キャリア目標",
+          career_goal1: ".NET、Angular、DevOps技術に注力するフルスタック開発者としてのキャリアを目指しています。",
+          career_goal2: "中期的にはテックリードとなり、最適化されたソリューションの開発と効果的なチーム構築に貢献します。",
+          Work_experience_title: "💼 職務経験",
+          Work_experience_title0: "ACACY株式会社 — シニアIT研究開発（2023年7月 - 現在）",
+          Work_experience_title1: "社内システム開発プロジェクトの管理および調整。",
+          Work_experience_title2: "チームリードの役割：3人のウェブ開発者と2人のモバイル開発者からなるチームを率いる。",
+          Work_experience_title3: "テックリードおよびマネージャーと連携し、各プロジェクトに適した技術ソリューションの提案と実施。",
+          Work_experience_title4: "定期的な会議を開催し、ソリューションを把握し、チームの業務課題の解決、バグ修正、システムの最適化を支援。",
+          Work_experience_title5: "以下の環境でシステムを展開および運用：IIS、Docker、Jenkins、Windowsサーバー。",
+          Work_experience_title6: "使用技術：.NET Framework、MSSerivce、TaskJob自動化、NET Core、SQL Server、Angular、SVN、Power BI。",
+          Work_experience_title7: "主なプロジェクト：",
+          Work_experience_title8: "ユニリーバ商品管理",
+          Work_experience_title9: "小売MTストア",
+          Work_experience_title10: "サムスンフィールドフォース",
+          Work_experience_title11: "リデンプション＆アクティベーション",
+          Work_experience_title12: "パートナー統合データ処理のマイクロサービス",
+          Work_experience_title_1_0: "Dicentral VN - TrueCommerce — シニア開発者（2022年7月 - 2023年6月）",
+          Work_experience_title_1_1: "ソフトウェアシステムの開発および保守。",
+          Work_experience_title_1_2: ".NET WebFormsから.NET Core + Angularへのシステム移行。",
+          Work_experience_title_1_3: "技術：.NET Core、SQL、Angular、MS Services、Azure DevOps、Git。",
+          Work_experience_title_2_0: "ACACY株式会社 — アプリケーションチームリーダー（2021年12月 - 2022年6月）",
+          Work_experience_title_2_1: "開発チームの管理、社内システムの開発。",
+          Work_experience_title_2_2: "業務要件の管理およびタスクの割り当て。",
+          Work_experience_title_2_3: "技術：.NET Framework、.NET Core、SQL、Angular。",
+          Work_experience_title_2_4: "ACACY株式会社 — ASP.NET開発者（2018年10月 - 2021年12月）",
+          Work_experience_title_2_5: "Samsung Fieldforce、Unilever Merchandising、Techcombank Auditなどの社内システムを開発。",
+          Work_experience_title_2_6: "技術：.NET Framework、SQL、WebForms、IISサービス。",
+          Work_experience_title_2_7: "AthenaGroup — ソーシャルデジタルマーケティング（2018年6月 - 2018年9月）",
+          Work_experience_title_2_8: "デジタルマーケティングキャンペーンに参加し、クライアントのソリューションを支援。",
+          Education_level: "🎓 学歴",
+          Education_level_1: "チャン・ダイ・ギア大学（VIMHEMPIC）— 2014 - 2018",
+          Education_level_2: "専攻：ITアプリケーション | GPA: 2.54",
+          Skill: "🛠️ スキル",
+          Skill1: "プログラミング：C#、.NET Framework/Core、SQL、Angular",
+          Skill2: "デプロイ：Docker、Jenkins、IIS、Windowsサーバー",
+          Skill3: "ソース管理：Git、SVN、TFS",
+          Skill4: "ソフトスキル：チームワーク、問題解決、時間管理",
+          Featured_projects: "📁 주요 프로젝트",
+          Featured_projects_0: "사용 기술:",
+          Featured_projects_1: "세일즈 팀과 시장 활동 관리...",
+          Featured_projects_2:
+            "ASP.NET Web Forms, .NET Framework 2.2, SQL Server, AJAX, .ashx를 통한 API 처리, Chart.js, 마이크로서비스, 일일 보고서 이메일 전송 백그라운드 작업.",
+          Featured_projects_3: "판매점에서 PG 출퇴근 체크용 앱...",
+          Featured_projects_4: "netcore 6, SQL Server, Angular15, Chart.js, 마이크로서비스",
+          Featured_projects_5: "현장 인력의 인사 및 근태 관리...",
+          Featured_projects_6:
+            "ASP.NET Web Forms, .NET Framework 2.2, SQL Server, AJAX, .ashx를 통한 API 처리, Chart.js, 마이크로서비스, 일일 보고서 이메일 전송 백그라운드 작업.",
+             info1: "세일즈 팀, 감사자, 머천다이저를 관리하는 시스템으로, 진열 평가, 시장 조사, 판매 활동을 수행합니다.",
+    info2: "슈퍼마켓/창고에서 PG를 위한 출퇴근 앱. 직원은 판매 지점에서 출석 체크, 재고 조사, 상품 진열 및 제품 홍보를 수행합니다. (고객: Pepsi, Mondelez, Abbott...)",
+    info3: "삼성의 시장 판매 인력을 위한 인사 및 출퇴근 관리.",
+      edu: "🎓 학력",
+    edu1: "쩐다이응이어 대학교 - 군사 기술 장교 학교 — 2014년 ~ 2018년",
+    edu2: "전공: IT 응용 | GPA: 2.54"
+
+        },
+      };
+
+      function switchLanguage(lang) {
+        document.documentElement.lang = lang;
+        document.querySelectorAll("[data-i18n]").forEach((el) => {
+          const key = el.getAttribute("data-i18n");
+          if (translations[lang] && translations[lang][key]) {
+            el.textContent = translations[lang][key];
+          }
+        });
+      }
     </script>
 
     <footer>
